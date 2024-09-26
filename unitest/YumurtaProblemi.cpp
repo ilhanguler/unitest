@@ -1,4 +1,5 @@
-#include "Headers.h"
+#pragma once
+#include "YumurtaProblemi.h"
 
 // Bu kaynak, yumurta problemini ele alýyor. 2'den fazla 64 bit yumurta sayýsýný ve 64 bitlik kat deðerlerinin hepsini iþliyor.
 // Optimum yolla istenen deðere hýzlýca ulaþýyor.
@@ -52,6 +53,8 @@ int yumurtaGirdi() {
     {
         rastgeleDeger(katBulunmasiIstenen, katSayisi);
     }
+
+    return 1;
 }
 
 int yumurtaCalistir() {
@@ -71,7 +74,7 @@ int yumurtaCalistir() {
         cout << endl << "Segment Boyutu: " << segmentBoyutu << endl << "Segment Sayisi: " << segmentGidilen
             << endl << "Son Segment Boyutu: " << segmentBoyutuSonuncu
             << endl << "Kat Sayisi: " << katSayisi << endl << "Yumurta Sayisi: " << yumurtaSayisi
-            << endl << "Adim Sayisi: " << adimSayisi << endl;
+            << endl << "Adim Sayisi: " << adimSayisi << endl << "Parcalara Ayrildi: " << parcalaraAyrildi << endl;
 
         // Segmentlerin sýrasýyla en üst katýný deniyoruz.
         for (; (katBulunanParca <= katBulunmasiIstenen) && (katBulunanParca < katTamBolunen); adimSayisi++) {
@@ -134,6 +137,8 @@ int yumurtaCalistir() {
 
 
     }
+
+    return 1;
 }
 
 int yumurtaSonuclar() {
@@ -143,4 +148,5 @@ int yumurtaSonuclar() {
     cout << "*\tAdim sayisi: " << adimSayisi << endl;
     cout << "*\tElde kalan yumurta: " << yumurtaSayisi << endl << endl;
 
+    return 1;
 }
