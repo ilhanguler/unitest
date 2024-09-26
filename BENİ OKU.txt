@@ -1,0 +1,6 @@
+* Arşivin içindeki .EXE dosyasıyla direkt olarak çalıştırılabilir.
+* Visual Studio'da açılması önerilir. Arşivi çıkartıp, .SLN uzantılı dosya ile açılır.
+* Harici kütüphaneler barındırır. (Windows.h gibi)
+* Girilen verilerin büyüklüğü önemli değildir. Hepsini hesaplar.
+
+- İlhan Güler
